@@ -7,7 +7,6 @@ require.config({
 		marionette_dust: '../bower_components/marionette-dust/src/amd/backbone.marionette.dust',
 		jquery: '../bower_components/jquery/dist/jquery.min',
 		localStorage: '../bower_components/backbone.localStorage/backbone.localStorage',
-		tpl: 'lib/tpl',
         bootstrap: 'lib/bootstrap.min'
 	},
 
