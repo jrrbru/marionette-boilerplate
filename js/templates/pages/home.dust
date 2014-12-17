@@ -12,7 +12,7 @@
     <p><strong>Backbone.Marionette + DustJS + RequireJS + Twitter Bootstrap</strong></p>
     <p>
         <img src="img/Octocat.png">
-        <a class="btn btn-lg btn-success" href="https://github.com/ajaxray/marionette-boilerplate" role="button"> Get the source</a>
+        <a class="btn btn-lg btn-success" href="https://github.com/jrrbru/marionette-dust-boilerplate" role="button"> Get the source</a>
     </p>
 </div>
 <div class="row">
