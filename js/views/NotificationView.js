@@ -2,12 +2,12 @@
 
 define([
 	'marionette',
-    'tpl!templates/notification.html'
-], function (Marionette, notificationTpl) {
+    'templates'
+], function (Marionette, templates) {
 	'use strict';
 
 	return Marionette.ItemView.extend({
-        template: notificationTpl,
+        template: 'notification',
 		events: {
             'click .dismiss': function(e) {
                 e.preventDefault();

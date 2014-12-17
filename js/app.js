@@ -3,12 +3,13 @@
 define([
     'backbone',
 	'marionette',
+	'marionette_dust',
     'regions/notification',
     'regions/dialog',
 	'collections/Nav',
 	'views/MenuView',
 	'views/Footer'
-], function (Backbone, Marionette, NotifyRegion, DialogRegion, Nav, MenuView, Footer) {
+], function (Backbone, Marionette, MarionetteDust, NotifyRegion, DialogRegion, Nav, MenuView, Footer) {
 	'use strict';
 
 	var app = new Marionette.Application();
@@ -80,11 +81,11 @@ define([
      *       });
      */
     app.commands.setHandler("app:dialog:simple", function(data) {
-        require(['views/DialogView', 'models/Dialog', 'tpl!templates/simpleModal.html'],
-            function(DialogView, DialogModel, ModalTpl) {
+        require(['views/DialogView', 'models/Dialog', 'templates'],
+            function(DialogView, DialogModel, templates) {
 
                 app.dialog.show(new DialogView({
-                    template: ModalTpl,
+                    template: 'simpleModal',
                     model: new DialogModel(data)
                 }));
             });
@@ -101,11 +102,11 @@ define([
      *       });
      */
     app.commands.setHandler("app:dialog:confirm", function(data) {
-        require(['views/DialogView', 'models/Dialog', 'tpl!templates/confirmModal.html'],
-            function(DialogView, DialogModel, ModalTpl) {
+        require(['views/DialogView', 'models/Dialog', 'templates'],
+            function(DialogView, DialogModel, templates) {
 
                 app.dialog.show(new DialogView({
-                    template: ModalTpl,
+                    template: 'confirmModal',
                     model: new DialogModel(data),
                     events: {
                         'click .dismiss': 'dismiss',

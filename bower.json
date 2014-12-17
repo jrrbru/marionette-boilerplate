@@ -6,6 +6,8 @@
     "requirejs": "latest",
     "underscore": "latest",
     "backbone.marionette": "latest",
-    "backbone.localStorage": "latest"
+    "backbone.localStorage": "latest",
+    "dustjs-linkedin": "~2.5.1",
+    "marionette-dust": "~0.1.6"
   }
 }

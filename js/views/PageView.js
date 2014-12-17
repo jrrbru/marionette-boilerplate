@@ -2,20 +2,26 @@
 
 define([
 	'marionette',
+	'dust',
 	'templates',
     'underscore',
-], function (Marionette, templates, _) {
+], function (Marionette, dust, templates, _) {
 	'use strict';
 
 	return Marionette.ItemView.extend({
-		template: templates.page,
+		template: 'page',
 
         ui: {
             header: 'h2'
         },
 
         onBeforeRender: function(){
-            this.model.set('content', _.result(templates.pages, this.model.get('name')))
+			var This = this;
+
+			dust.render('pages:' + this.model.get('name'), {}, function (err, output){
+				This.model.set('content', output);
+			});
+
         }
 
 	});

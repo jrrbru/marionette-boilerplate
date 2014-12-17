@@ -1,0 +1,7 @@
+<div class="alert alert-{?obj.type}{obj.type}{:else}info{/obj.type}">
+    <button type="button" class="close dismiss" aria-hidden="true">×</button>
+    {?obj.title}
+    <h4>{title}</h4>
+    {/obj.title}
+    {description}
+</div>

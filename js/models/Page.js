@@ -10,7 +10,7 @@ define([
 		defaults: {
 			title: 'Page title',
 			content: 'Page content',
-            acive: false,
+            active: false,
             name: '404'
 		},
 

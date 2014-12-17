@@ -9,7 +9,7 @@ define([
 	'use strict';
 
 	return Marionette.ItemView.extend({
-		template: templates.menuItem,
+		template: 'menuItem',
         tagName: 'li',
         model: Page,
 

@@ -9,7 +9,7 @@
         Let's start the dance!
         This boilerplate is a ready setup for starting your next awesome javascript app in minutes.
     </p>
-    <p><strong>Backbone.Marionette + RequireJS + Twitter Bootstrap</strong></p>
+    <p><strong>Backbone.Marionette + DustJS + RequireJS + Twitter Bootstrap</strong></p>
     <p>
         <img src="img/Octocat.png">
         <a class="btn btn-lg btn-success" href="https://github.com/ajaxray/marionette-boilerplate" role="button"> Get the source</a>
@@ -37,6 +37,17 @@
             <a target="_blank" href="http://backbonejs.org/">Backbone.js</a><br/>
             <span class="glyphicon glyphicon-globe"></span>
             <a target="_blank" href="http://marionettejs.com/">Marionette</a>
+        </p>
+    </div>
+
+    <div class="col-lg-4">
+        <h4>dust</h4>
+        <p>
+            dust is a fast, markup-like templating engine built in JavaScript. <br />
+        </p>
+        <p>
+            <span class="glyphicon glyphicon-globe"></span>
+            <a target="_blank" href="http://http://akdubya.github.io/dustjs/">dust</a><br/>
         </p>
     </div>
 

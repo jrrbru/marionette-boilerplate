@@ -8,7 +8,7 @@ define([
 	'use strict';
 
 	return Marionette.ItemView.extend({
-		template: templates.page,
+		template: 'page',
 
         ui: {
             header: 'h2'
@@ -21,7 +21,11 @@ define([
         },
 
         onBeforeRender: function(){
-            this.model.set('content', _.result(templates.pages, this.model.get('name')))
+			var This = this;
+
+			dust.render('pages:' + this.model.get('name'), {}, function (err, output){
+				This.model.set('content', output);
+			});
         },
 
         onRender: function() {
