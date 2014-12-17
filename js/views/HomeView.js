@@ -2,30 +2,19 @@
 
 define([
 	'marionette',
+	'views/PageView',
 	'templates',
     'underscore',
-], function (Marionette, templates, _) {
+
+], function (Marionette, PageView, templates, _) {
 	'use strict';
 
-	return Marionette.ItemView.extend({
-		template: 'page',
-
-        ui: {
-            header: 'h2'
-        },
+	return PageView.extend({
 
         events: {
             'click #notify' : 'notify',
             'click #modal' : 'showSampleModal',
             'click #confirm' : 'showSampleConfirm'
-        },
-
-        onBeforeRender: function(){
-			var This = this;
-
-			dust.render('pages:' + this.model.get('name'), {}, function (err, output){
-				This.model.set('content', output);
-			});
         },
 
         onRender: function() {
