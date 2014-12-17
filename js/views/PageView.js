@@ -13,7 +13,7 @@ define([
 
         ui: {
             header: 'h2'
-        },
+        }/*,
 
         onBeforeRender: function(){
 			var This = this;
@@ -22,7 +22,7 @@ define([
 				This.model.set('content', output);
 			});
 
-        }
+        }*/
 
 	});
 });
