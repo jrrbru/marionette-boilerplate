@@ -1,0 +1,15 @@
+{
+  "name": "marionette-dust-boilerplate",
+  "version": "0.0.1",
+  "homepage": "https://github.com/jrrbru/marionette-dust-boilerplate",
+  "repository" : {
+	  "type" : "git",
+	  "url" : "https://github.com/jrrbru/marionette-boilerplate.git"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-concat": "^2.4.2",
+    "gulp-dust": "^1.0.2",
+    "gulp-wrap-amd": "^0.4.0"
+  }
+}
